@@ -1,0 +1,61 @@
+ProjectileBlueprint {
+    Audio = {
+        Impact = Sound {
+            Bank = 'Impacts',
+            Cue = 'UEF_Expl_Med_Impact',
+            LodCutoff = 'Weapon_LodCutoff',
+        },
+        ImpactTerrain = Sound {
+            Bank = 'Impacts',
+            Cue = 'Impact_Land_Gen_UEF',
+            LodCutoff = 'Weapon_LodCutoff',
+        },
+        ImpactWater = Sound {
+            Bank = 'Impacts',
+            Cue = 'Impact_Water_Splash_UEF',
+            LodCutoff = 'Weapon_LodCutoff',
+        },
+    },
+    Categories = {
+        'UEF',
+        'PROJECTILE',
+        'ANTIAIR',
+        'MISSILE',
+    },
+    Defense = {
+        Health = 100,
+        MaxHealth = 100,
+    },
+    Display = {
+        CameraFollowTimeout = 3,
+        CameraFollowsProjectile = true,
+        ImpactEffects = {
+            Type = 'Medium01',
+        },
+        MeshBlueprint = '/projectiles/tifmissilecruise01/tifmissilecruise01_mesh.bp',
+        StrategicIconSize = 2,
+        UniformScale = 0.15,
+    },
+    General = {
+        Category = 'Anti Air',
+        Faction = 'UEF',
+    },
+    Interface = {
+        HelpText = 0,
+    },
+    Physics = {
+        Acceleration = 8,
+        DestroyOnWater = true,
+        InitialSpeed = 1,
+		LeadTarget = false,
+        LifeTime = 8,
+        MaxSpeed = 30,
+		OnLostTargetLifetime = 1.0,
+        RotationalVelocity = 0,
+        RotationalVelocityRange = 0,
+        TrackTarget = true,
+        TurnRate = 1440,--gets reset in script!
+        UseGravity = false,
+        VelocityAlign = true,
+    },
+}

@@ -1,0 +1,68 @@
+Threat Level = Tally marks
+
+Short Range
+Medium Range
+Long Range
+Huge Range
+
+Slow
+Fast
+
+Ionized
+Plated
+Hardened
+
+Intel
+Economic
+Engineer
+Nuclear
+Volatile
+Manual Launch
+Transport
+Shield
+
+
+All Mass gens give 10 per second
+Command produces 10 energy
+All Econ Buildings have 1200 health and 10A seconds 10mass/s, except nuke silo
+Range: Short15 Medium30 Long60 Huge90
+Speed: Slow2 Fast4 AirSlow15 AirFast20 WaterSlow4 WaterFast6
+
+Shoots at Air: AA
+Shoots at Ground: G
+
+Commander is only engineer
+Command 10000 Health regens 10 health per second						uel0001
+100 damage cannon @1
+
+
+Can only build:
+Ground:
+Harrass Tank 250H 50D Short Fast G	12500@1		0:15	AntiPlated	Light		uel0202
+Anti-Tank Bot 600H 25D Short Slow G 	30000@0.5	0:30	AntiLight	Ionized		uel0303
+Mobile Rail Gun 650H 500D Medium Slow G	81250@4		1:30	AntiIonized	Plated		xel0305
+
+Air:
+Bomber 100H 500D Short Air G		10000@5		1:00	AntiIonized	Plated		uea0304
+Fighter 100H 5D Medium Air AA		2000@0.25	0:30	AntiPlated	Light		uea0303
+Transport 200H Air					0:30			Light		xea0306
+
+Sea:
+Battleship 2000H 500D Huge Slow G	100000@10	1:30	AntiLight	Plated		ues0302
+Cruiser 1000H 200D Long Slow G AA	 50000@4	0:45	AntiLight	Plated		ues0202
+Frigate 500H 50D Medium Fast G		 50000@0.5	0:30	AntiPlated	Plated		ues0103
+
+
+Mass Extractor +2.5/sec	1000 Storage						Light		ueb1302
+Power	+2.5/sec	1000 Storage						Light		ueb1201
+Vision Tower		Huge								Light		ueb3104
+
+Artillery 100D Huge			20000@5			AntiLight	Ionized		ueb2303
+Auto Turret 150D  Medium		150000@1		AntiIonized	Ionized		ueb2301
+SAM 210D Medium				50000@4			AntiPlated	Plated		ueb2304
+Nuclear Silo 1000D InfiniteRange	1666@10:00	1:00	AntiLight	Plated		ueb2305
+
+Factory										Plated		ueb0101
+Starport									Plated		ueb0102
+Shipyard									Plated		ueb0103
+
