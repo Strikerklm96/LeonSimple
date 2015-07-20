@@ -250,7 +250,7 @@ UnitBlueprint {
             NukeOuterRingTicks = 20,
             NukeOuterRingTotalTime = 7,
             NukeWeapon = true,
-            ProjectileId = '/mods/Simple/projectiles/LeonMissileNuke01/LeonMissileNuke01_proj.bp',
+            ProjectileId = '/mods/LeonSimple/projectiles/LeonMissileNuke01/LeonMissileNuke01_proj.bp',
             ProjectilesPerOnFire = 1,
             RackBones = {
                 {

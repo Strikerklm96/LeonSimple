@@ -275,17 +275,17 @@ UnitBlueprint {
             DamageType = 'AntiLight',
             DisplayName = 'Long Range Cruise Missile',
             FireTargetLayerCapsTable = {
-                Water = 'Air|Land|Water|Seabed',
+                Water = 'Air',
             },
             FiringTolerance = 2,
             Label = 'CruiseMissile',
-            MaxRadius = 60,
+            MaxRadius = 90,
             MinRadius = 0,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 0,
-            ProjectileId = '/mods/Simple/projectiles/LeonMissileLarge01/LeonMissileLarge01_proj.bp',
-            ProjectileLifetime = 40,
+            ProjectileId = '/mods/LeonSimple/projectiles/LeonMissileLarge01/LeonMissileLarge01_proj.bp',
+            ProjectileLifetime = 10,
             RackBones = {
                 {
                     MuzzleBones = {
@@ -344,7 +344,7 @@ UnitBlueprint {
             RackSalvoSize = 1,
             RackSlavedToTurret = false,
             RangeCategory = 'UWRC_IndirectFire',
-            RateOfFire = 0.25,
+            RateOfFire = 0.5,
             RenderFireClock = true,
             TargetCheckInterval = 0.1,
             TargetPriorities = {
@@ -354,7 +354,7 @@ UnitBlueprint {
                 'ALLUNITS',
             },
             TargetRestrictDisallow = 'UNTARGETABLE',
-            TrackingRadius = 1.15,
+            TrackingRadius = 1.05,
             TurretDualManipulators = false,
             TurretPitch = 0,
             TurretPitchRange = 0,
@@ -384,11 +384,11 @@ UnitBlueprint {
             },
             FiringTolerance = 5,
             Label = 'PhalanxGun01',
-            MaxRadius = 30,
+            MaxRadius = 40,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 120,
-            ProjectileId = '/projectiles/TDPhalanx01/TDPhalanx01_proj.bp',
+            ProjectileId = '/mods/LeonSimple/projectiles/LeonAms01/LeonAms01_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.1,
             RackBones = {
                 {
