@@ -83,10 +83,10 @@ UnitBlueprint {
     Description = 'Battleship',
     Display = {
         Abilities = {
-            'Explosive',
-			'Huge Range',
-			'Plated',
-			'Slow',
+            'Plated',
+			'40m/s',
+			'AntiLight',
+			'Range 90',
         },
         AnimationDeath = {
             {
@@ -250,7 +250,7 @@ UnitBlueprint {
         Level5 = 9994,
     },
     Weapon = {
-        {
+        {--Front Cannons
             AboveWaterTargetsOnly = true,
             Audio = {
                 BarrelLoop = Sound {
@@ -276,7 +276,7 @@ UnitBlueprint {
             },
             BallisticArc = 'RULEUBA_LowArc',
             CollideFriendly = false,
-            Damage = 112,
+            Damage = 50,
             DamageRadius = 3,
             DamageType = 'AntiLight',
             DisplayName = 'Gauss Cannon',
@@ -290,7 +290,7 @@ UnitBlueprint {
             MaxRadius = 90,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
-            MuzzleVelocity = 30,
+            MuzzleVelocity = 35,
             ProjectileId = '/projectiles/TDFGauss03/TDFGauss03_proj.bp',
             ProjectilesPerOnFire = 3,
             RackBones = {
@@ -327,7 +327,7 @@ UnitBlueprint {
             RackSalvoSize = 1,
             RackSlavedToTurret = true,
             RangeCategory = 'UWRC_DirectFire',
-            RateOfFire = 0.1,
+            RateOfFire = 0.25,
             SlavedToBody = true,
             SlavedToBodyArcRange = 135,
             TargetCheckInterval = 3,
@@ -354,7 +354,7 @@ UnitBlueprint {
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
         },
-        {
+        {--Mid Cannons
             AboveWaterTargetsOnly = true,
             Audio = {
                 BarrelLoop = Sound {
@@ -380,7 +380,7 @@ UnitBlueprint {
             },
             BallisticArc = 'RULEUBA_LowArc',
             CollideFriendly = false,
-            Damage = 112,
+            Damage = 50,
             DamageRadius = 3,
             DamageType = 'AntiLight',
             DisplayName = 'Gauss Cannon',
@@ -394,7 +394,7 @@ UnitBlueprint {
             MaxRadius = 90,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
-            MuzzleVelocity = 30,
+            MuzzleVelocity = 35,
             PrefersPrimaryWeaponTarget = true,
             ProjectileId = '/projectiles/TDFGauss03/TDFGauss03_proj.bp',
             ProjectilesPerOnFire = 3,
@@ -432,7 +432,7 @@ UnitBlueprint {
             RackSalvoSize = 1,
             RackSlavedToTurret = true,
             RangeCategory = 'UWRC_DirectFire',
-            RateOfFire = 0.1,
+            RateOfFire = 0.25,
             SlavedToBody = true,
             SlavedToBodyArcRange = 135,
             TargetCheckInterval = 3,
@@ -459,7 +459,7 @@ UnitBlueprint {
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
         },
-        {
+        {--Back Cannons
             AboveWaterTargetsOnly = true,
             Audio = {
                 BarrelLoop = Sound {
@@ -485,7 +485,7 @@ UnitBlueprint {
             },
             BallisticArc = 'RULEUBA_LowArc',
             CollideFriendly = false,
-            Damage = 112,
+            Damage = 50,
             DamageRadius = 3,
             DamageType = 'AntiLight',
             DisplayName = 'Gauss Cannon',
@@ -499,7 +499,7 @@ UnitBlueprint {
             MaxRadius = 90,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
-            MuzzleVelocity = 30,
+            MuzzleVelocity = 35,
             PrefersPrimaryWeaponTarget = true,
             ProjectileId = '/projectiles/TDFGauss03/TDFGauss03_proj.bp',
             ProjectilesPerOnFire = 3,
@@ -537,7 +537,7 @@ UnitBlueprint {
             RackSalvoSize = 1,
             RackSlavedToTurret = true,
             RangeCategory = 'UWRC_DirectFire',
-            RateOfFire = 0.1,
+            RateOfFire = 0.25,
             SlavedToBody = true,
             SlavedToBodyArcRange = 135,
             TargetCheckInterval = 3,

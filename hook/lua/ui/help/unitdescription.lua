@@ -30,7 +30,7 @@ Description = {
 	['ueb2303'] = "Long range defence cannon.",##Artillery Installation
 	['ueb2301'] = "Good for defending against most land based threats.",##Point Defense
 	['ueb2304'] = "Decimates enemy aircraft.",##SAM
-	['ueb2305'] = "Takes ten minutes to build an ICBM that has unlimited range and cannot be shot down. The silo damages any nearby units if destroyed.",##ICBM Silo
+	['ueb2305'] = "Takes ten minutes to build an ICBM that has unlimited range and cannot be shot down. Commander increases nuke build rate by 10%",##ICBM Silo
 	#Economy
 	['ueb1302'] = "Harvests Mass. Must be placed on a mass deposit.",##Mass Extractor
 	['ueb1201'] = "Generates Energy. Damages nearby units if destroyed.",##Power Plant
