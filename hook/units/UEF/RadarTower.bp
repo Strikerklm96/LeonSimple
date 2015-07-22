@@ -36,7 +36,7 @@ UnitBlueprint {
     CollisionOffsetY = -0.25,
     Defense = {
         AirThreatLevel = 0,
-        ArmorType = 'Light',
+        ArmorType = 'Plated',
         EconomyThreatLevel = 3,
         Health = 325,
         MaxHealth = 325,
@@ -47,7 +47,7 @@ UnitBlueprint {
     Description = 'Sensor Tower',
     Display = {
         Abilities = {
-			'Huge Range',
+			'Plated',
             'Intel',
         },
         BlinkingLights = {
@@ -155,11 +155,11 @@ UnitBlueprint {
     },
     Intel = {
 		FreeIntel = true,
-        OmniRadius = 90,
-        RadarRadius = 1,
+        OmniRadius = 0,
+        RadarRadius = 100,
         ReactivateTime = 10,
         ShowIntelOnSelect = true,
-        VisionRadius = 90,
+        VisionRadius = 100,
     },
     Interface = {
         HelpText = '[Help Text]',

@@ -68,7 +68,7 @@ UnitBlueprint {
         Abilities = {
 			'Ionized',
 			'AntiLight',
-			'Range: 90',
+			'Surface 900m',
         },
         Mesh = {
             IconFadeInZoom = 130,
@@ -204,7 +204,7 @@ UnitBlueprint {
             },
             BallisticArc = 'RULEUBA_LowArc',
             CollideFriendly = false,
-            Damage = 200,
+            Damage = 100,
             DamageFriendly = true,
             DamageRadius = 3,
             DamageType = 'AntiLight',

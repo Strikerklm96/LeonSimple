@@ -27,10 +27,11 @@ Description = {
 	['ues0302'] = "Huge warship capable of bombarding from afar.",##Battleship
 	#Defense
 	['ueb3104'] = "Provides vision in a large area.",##Vision Tower
-	['ueb2303'] = "Long range defence cannon.",##Artillery Installation
+	['ueb2303'] = "Long range defense cannon.",##Artillery Installation
 	['ueb2301'] = "Good for defending against most land based threats.",##Point Defense
 	['ueb2304'] = "Decimates enemy aircraft.",##SAM
 	['ueb2305'] = "Takes ten minutes to build an ICBM that has unlimited range and cannot be shot down. Commander increases nuke build rate by 10%",##ICBM Silo
+	['ueb4201'] = "Anti Missile System. Shoots down enemy missiles in range.",##AMS Installation
 	#Economy
 	['ueb1302'] = "Harvests Mass. Must be placed on a mass deposit.",##Mass Extractor
 	['ueb1201'] = "Generates Energy. Damages nearby units if destroyed.",##Power Plant
@@ -116,7 +117,6 @@ Description = {
 	 ['ueb2109'] = "<LOC Unit_Description_0059> Anti-naval defense system.",
    ['ueb5101'] = "<LOC Unit_Description_0060> Restricts the movement of enemy units. Offers minimal protection from enemy fire.",
    ['ueb2204'] = "<LOC Unit_Description_0062> Anti-air tower. Designed to engage mid-level aircraft.",
-   ['ueb4201'] = "<LOC Unit_Description_0063> Tactical missile defense. Protection is limited to the structure's operational area.",
 	 ['ueb2205'] = "<LOC Unit_Description_0064> Anti-naval defense system. Designed to engage all naval units.",
 	 ['ueb4202'] = "<LOC Unit_Description_0065> Generates a protective shield around units and structures within its radius.",
    ['ueb4302'] = "<LOC Unit_Description_0067> Strategic missile defense. Protection is limited to the structure's operational area.",

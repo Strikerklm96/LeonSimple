@@ -125,9 +125,9 @@ UnitBlueprint {
     Display = {
         Abilities = {
 			'Plated',
-			'Quick',
+			'200m/s',
 			'AntiIonized',
-			'Range 30',
+			'Surface 50m',
         },
         LayerChangeEffects = {
             AirLand = {
@@ -236,7 +236,7 @@ UnitBlueprint {
     },
     Intel = {
 		RadarRadius = 1,
-        VisionRadius = 35,
+        VisionRadius = 40,
     },
     Interface = {
         HelpText = '[Help Text]',
@@ -297,9 +297,9 @@ UnitBlueprint {
             BallisticArc = 'RULEUBA_None',
             BombDropThreshold = 2,
             CollideFriendly = false,
-            Damage = 1000,
+            Damage = 850,
             DamageFriendly = true,
-            DamageRadius = 5,
+            DamageRadius = 3,
             DamageType = 'AntiIonized',
             DisplayName = 'Small Yield Nuclear Bomb',
             EffectiveRadius = 4,
@@ -332,7 +332,7 @@ UnitBlueprint {
             RackSalvoReloadTime = 0,
             RackSalvoSize = 1,
             RackSlavedToTurret = false,
-            RateOfFire = 0.1,
+            RateOfFire = 0.2,
             TargetCheckInterval = 2.5,
             TargetPriorities = {
                 'SPECIALHIGHPRI',
@@ -362,7 +362,7 @@ UnitBlueprint {
             BallisticArc = 'RULEUBA_None',
             CannotAttackGround = true,
             CollideFriendly = false,
-            Damage = 1,
+            Damage = 0,
             DamageType = 'Normal',
             DisplayName = 'Linked Railgun',
             FireTargetLayerCapsTable = {
@@ -371,7 +371,7 @@ UnitBlueprint {
             },
             FiringTolerance = 0,
             Label = 'LinkedRailGun1',
-            MaxRadius = 1,
+            MaxRadius = 0,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 45,

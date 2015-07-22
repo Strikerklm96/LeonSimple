@@ -64,9 +64,9 @@ UnitBlueprint {
     Display = {
         Abilities = {
             'Ionized',
-			'Slow',
+			'30m/s',
 			'AntiLight',
-			'Range 15',
+			'Surface 150m',
         },
         AnimationDeath = {
             {
@@ -83,7 +83,7 @@ UnitBlueprint {
             },
         },
         AnimationWalk = '/units/uel0303/uel0303_awalk.sca',
-        AnimationWalkRate = 5.8,
+        AnimationWalkRate = 9,
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
@@ -176,7 +176,7 @@ UnitBlueprint {
         DragCoefficient = 0.2,
         MaxAcceleration = 999,
         MaxBrake = 999,
-        MaxSpeed = 2.0,
+        MaxSpeed = 3.0,
         MaxSpeedReverse = 0,
         MaxSteerForce = 999,
         MeshExtentsX = 1.1,
@@ -223,6 +223,7 @@ UnitBlueprint {
             BallisticArc = 'RULEUBA_LowArc',
             CollideFriendly = false,
             Damage = 25,
+			DamageRadius = 1,
             DamageType = 'AntiLight',
             DisplayName = 'Heavy Plasma Cannon',
             FireTargetLayerCapsTable = {

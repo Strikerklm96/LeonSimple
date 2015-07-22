@@ -121,10 +121,9 @@ UnitBlueprint {
     Display = {
         Abilities = {
             'Light',
-			'Quick',
+			'200m/s',
 			'AntiPlated',
-			'Range 30',
-			'Anti-Aircraft',
+			'Anti-Aircraft 300m',
         },
         LayerChangeEffects = {
             AirLand = {
@@ -228,7 +227,7 @@ UnitBlueprint {
         UnitWeight = 1,
     },
     Intel = {
-        VisionRadius = 35,
+        VisionRadius = 40,
     },
     Interface = {
         HelpText = '[Help Text]',
@@ -290,7 +289,7 @@ UnitBlueprint {
             CollideFriendly = false,
             Damage = 5,
             DamageFriendly = false,
-            DamageRadius = 0,
+            DamageRadius = 1,
             DamageType = 'AntiPlated',
             DisplayName = 'Ginsu Pulse Beam',
             FireTargetLayerCapsTable = {
@@ -364,7 +363,7 @@ UnitBlueprint {
             CollideFriendly = false,
             Damage = 1,
             DamageFriendly = false,
-            DamageRadius = 0,
+            DamageRadius = 1,
             DamageType = 'AntiPlated',
             DisplayName = 'Ginsu Pulse Beam',
             FireTargetLayerCapsTable = {

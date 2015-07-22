@@ -49,8 +49,8 @@ UnitBlueprint {
         AirThreatLevel = 0,
         ArmorType = 'Ionized',
         EconomyThreatLevel = 0,
-        Health = 1000,
-        MaxHealth = 1000,
+        Health = 645,
+        MaxHealth = 645,
         RegenRate = 0,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 3,
@@ -58,9 +58,9 @@ UnitBlueprint {
     Description = 'Defense Turret',
     Display = {
         Abilities = {
-			'Energy',
-			'Medium Range',
 			'Ionized',
+			'AntiIonized',
+			'Surface 300m',
         },
         Mesh = {
             IconFadeInZoom = 130,
@@ -99,9 +99,9 @@ UnitBlueprint {
         UniformScale = 0.28,
     },
     Economy = {
-        BuildCostEnergy = 200,
-        BuildCostMass = 200,
-        BuildTime = 20,
+        BuildCostEnergy = 150,
+        BuildCostMass = 150,
+        BuildTime = 15,
         RebuildBonusIds = {
             'ueb2301',
         },
@@ -135,7 +135,7 @@ UnitBlueprint {
         UnitWeight = 1,
     },
     Intel = {
-        VisionRadius = 35,
+        VisionRadius = 40,
     },
     Interface = {
         HelpText = '<LOC ueb2301_help>Point Defense',
@@ -173,7 +173,7 @@ UnitBlueprint {
     SizeX = 0.6,
     SizeY = 1.1,
     SizeZ = 0.6,
-    StrategicIconName = 'icon_structure3_directfire',
+    StrategicIconName = 'icon_structure2_directfire',
     StrategicIconSortPriority = 200,
     Veteran = {
         Level1 = 99,
@@ -194,7 +194,7 @@ UnitBlueprint {
             },
             BallisticArc = 'RULEUBA_LowArc',
             CollideFriendly = false,
-            Damage = 50,
+            Damage = 100,
             DamageFriendly = false,
             DamageRadius = 1,
             DamageType = 'AntiIonized',
@@ -226,7 +226,7 @@ UnitBlueprint {
             },
             RackFireTogether = false,
             RackRecoilDistance = -2,
-            RackReloadTimeout = 10,
+            RackReloadTimeout = 0,
             RackSalvoChargeTime = 0,
             RackSalvoReloadTime = 0,
             RackSalvoSize = 1,

@@ -162,6 +162,7 @@ UnitBlueprint {
     Display = {
         Abilities = {
             'Ionized',
+			'200m/s',
 			'Transport',
             'Shielded',
         },
@@ -246,17 +247,17 @@ UnitBlueprint {
         Category = 'Transport',
         Classification = 'RULEUC_MilitaryAircraft',
         CommandCaps = {
-            RULEUCC_Attack = true,
+            RULEUCC_Attack = false,
             RULEUCC_CallTransport = true,
             RULEUCC_Capture = false,
             RULEUCC_Ferry = true,
             RULEUCC_Guard = true,
             RULEUCC_Move = true,
             RULEUCC_Nuke = false,
-            RULEUCC_Patrol = true,
+            RULEUCC_Patrol = false,
             RULEUCC_Reclaim = false,
             RULEUCC_Repair = false,
-            RULEUCC_RetaliateToggle = true,
+            RULEUCC_RetaliateToggle = false,
             RULEUCC_Stop = true,
             RULEUCC_Transport = true,
         },
@@ -277,7 +278,7 @@ UnitBlueprint {
         UnitWeight = 1,
     },
     Intel = {
-        VisionRadius = 35,
+        VisionRadius = 40,
     },
     Interface = {
         HelpText = '<LOC xea0306_help>Heavy Air Transport',
@@ -338,7 +339,7 @@ UnitBlueprint {
             AutoInitiateAttackCommand = false,
             BallisticArc = 'RULEUBA_LowArc',
             CollideFriendly = false,
-            Damage = 1,
+            Damage = 0,
             DamageType = 'Normal',
             DisplayName = 'Heavy Plasma Cannon',
             FireTargetLayerCapsTable = {
@@ -468,7 +469,7 @@ UnitBlueprint {
             BallisticArc = 'RULEUBA_None',
             CannotAttackGround = true,
             CollideFriendly = false,
-            Damage = 20,
+            Damage = 0,
             DamageType = 'Normal',
             DisplayName = 'Flayer SAM Launcher',
             FireTargetLayerCapsTable = {
@@ -573,7 +574,7 @@ UnitBlueprint {
             BallisticArc = 'RULEUBA_None',
             CannotAttackGround = true,
             CollideFriendly = false,
-            Damage = 20,
+            Damage = 0,
             DamageType = 'Normal',
             DisplayName = 'Flayer SAM Launcher',
             FireTargetLayerCapsTable = {
@@ -679,7 +680,7 @@ UnitBlueprint {
             BallisticArc = 'RULEUBA_None',
             CannotAttackGround = true,
             CollideFriendly = false,
-            Damage = 20,
+            Damage = 0,
             DamageType = 'Normal',
             DisplayName = 'Flayer SAM Launcher',
             FireTargetLayerCapsTable = {
@@ -785,7 +786,7 @@ UnitBlueprint {
             BallisticArc = 'RULEUBA_None',
             CannotAttackGround = true,
             CollideFriendly = false,
-            Damage = 20,
+            Damage = 0,
             DamageType = 'Normal',
             DisplayName = 'Flayer SAM Launcher',
             FireTargetLayerCapsTable = {

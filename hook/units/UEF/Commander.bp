@@ -149,17 +149,19 @@ UnitBlueprint {
     Description = '<LOC uel0001_desc>Armored Command Unit',
     Display = {
         Abilities = {
-			'AntiLight',
 			'Plated',
-			'Short Range',
-			'Slow',
+			'20m/s',
+			'AntiLight',
+			'Surface 150m',
+			'Regenerative',
             'Engineer',
 			'Nuclear',
+			'Volatile',
         },
 
         # AnimationIdle = '/units/uel0001/uel0001_a002.sca',
         AnimationWalk = '/units/uel0001/uel0001_a001.sca',
-        AnimationWalkRate = 1.5,
+        AnimationWalkRate = 1.8,
         AttackReticleSize = 55,
         DamageEffects = {
             {
@@ -822,8 +824,8 @@ UnitBlueprint {
         UnitWeight = 1,
     },
     Intel = {
-        OmniRadius = 1,
-        VisionRadius = 35,
+        OmniRadius = 0,
+        VisionRadius = 40,
     },
     Interface = {
         HelpText = '[Help Text]',

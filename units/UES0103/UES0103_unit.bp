@@ -74,6 +74,7 @@ UnitBlueprint {
             'Plated',
             '60m/s',
             'AntiPlated',
+			'Surface 300m',
 			'Intel',
         },
         AnimationDeath = {
@@ -181,8 +182,8 @@ UnitBlueprint {
         UnitWeight = 1,
     },
     Intel = {
-        VisionRadius = 90,
-        WaterVisionRadius = 90,
+        VisionRadius = 100,
+        WaterVisionRadius = 100,
     },
     Interface = {
         HelpText = '[Help Text]',

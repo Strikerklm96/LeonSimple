@@ -65,8 +65,8 @@ UnitBlueprint {
         AirThreatLevel = 0,
         ArmorType = 'Plated',
         EconomyThreatLevel = 1,
-        Health = 1200,
-        MaxHealth = 1200,
+        Health = 3200,
+        MaxHealth = 3200,
         RegenRate = 0,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
@@ -182,7 +182,7 @@ UnitBlueprint {
         UpgradesTo = 'ueb0201',
     },
     Intel = {
-        VisionRadius = 35,
+        VisionRadius = 40,
     },
     Interface = {
         HelpText = '[Help Text]',

@@ -82,10 +82,9 @@ UnitBlueprint {
     Display = {
         Abilities = {
 			'Hardened',
-			'Slow',
+			'20m/s',
 			'AntiIonized',
-			'Range 30',
-			
+			'Surface 300m',
         },
         AnimationDeath = {
             {
@@ -276,7 +275,7 @@ UnitBlueprint {
             RackSalvoSize = 1,
             RackSlavedToTurret = false,
             RangeCategory = 'UWRC_DirectFire',
-            RateOfFire = 0.25,
+            RateOfFire = 0.1666,
             TargetCheckInterval = 0.25,
             TargetPriorities = {
                 'SPECIALHIGHPRI',

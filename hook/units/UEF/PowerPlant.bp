@@ -49,8 +49,8 @@ UnitBlueprint {
         AirThreatLevel = 0,
         ArmorType = 'Light',
         EconomyThreatLevel = 2,
-        Health = 1000,
-        MaxHealth = 1000,
+        Health = 1425,
+        MaxHealth = 1425,
         RegenRate = 0,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
@@ -58,7 +58,9 @@ UnitBlueprint {
     Description = 'Power Plant',
     Display = {
         Abilities = {
-			'Economic',
+			'Plated',
+            'Economic',
+			'Energy Storage',
             'Volatile',
         },
         DamageEffects = {
@@ -127,8 +129,8 @@ UnitBlueprint {
         BuildCostEnergy = 100,
         BuildCostMass = 100,
         BuildTime = 10,
-        ProductionPerSecondEnergy = 10,
-		StorageEnergy = 1000,
+        ProductionPerSecondEnergy = 3,
+		StorageEnergy = 500,
         RebuildBonusIds = {
             'ueb1201',
         },
@@ -162,7 +164,7 @@ UnitBlueprint {
         UnitWeight = 1,
     },
     Intel = {
-        VisionRadius = 35,
+        VisionRadius = 40,
     },
     Interface = {
         HelpText = '[Help Text]',
@@ -200,14 +202,14 @@ UnitBlueprint {
     SizeX = 2.2,
     SizeY = 0.9,
     SizeZ = 2.2,
-    StrategicIconName = 'icon_structure2_energy',
+    StrategicIconName = 'icon_structure1_energy',
     StrategicIconSortPriority = 245,
     Weapon = {
         {
-            Damage = 125,
+            Damage = 200,
             DamageFriendly = true,
-            DamageRadius = 5,
-            DamageType = 'AntiLight',
+            DamageRadius = 6,
+            DamageType = 'Normal',
             DisplayName = 'Death Weapon',
             DummyWeapon = true,
             Label = 'DeathWeapon',

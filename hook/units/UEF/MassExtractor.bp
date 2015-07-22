@@ -44,8 +44,8 @@ UnitBlueprint {
         AirThreatLevel = 0,
         ArmorType = 'Light',
         EconomyThreatLevel = 3,
-        Health = 750,
-        MaxHealth = 750,
+        Health = 975,
+        MaxHealth = 975,
         RegenRate = 0,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
@@ -53,7 +53,9 @@ UnitBlueprint {
     Description = 'Mass Extractor',
     Display = {
         Abilities = {
+			'Plated',
             'Economic',
+			'Mass Storage',
         },
         AnimationOpen = '/units/ueb1302/ueb1302_Apump.sca',
         AnimationUpgrade = '/units/ueb1302/ueb1302_Aupgrade.sca',
@@ -94,13 +96,13 @@ UnitBlueprint {
         UniformScale = 0.11,
     },
     Economy = {
-        BuildCostEnergy = 50,
-        BuildCostMass = 50,
-        BuildTime = 5,
+        BuildCostEnergy = 100,
+        BuildCostMass = 100,
+        BuildTime = 10,
         MaintenanceConsumptionPerSecondEnergy = 0,
 		NaturalProducer = true,
-        ProductionPerSecondMass = 10,
-		StorageMass = 1000,
+        ProductionPerSecondMass = 5,
+		StorageMass = 500,
         RebuildBonusIds = {
             'ueb1302',
         },
@@ -130,7 +132,7 @@ UnitBlueprint {
         ToggleCaps = {
             RULEUTC_ProductionToggle = true,
         },
-        UnitName = 'Mass Pump',
+        UnitName = 'D.R.I.L.L.',
         UnitWeight = 1,
         UpgradesFrom = 'ueb1202',
     },
@@ -174,7 +176,7 @@ UnitBlueprint {
     SizeX = 0.75,
     SizeY = 1.4,
     SizeZ = 0.75,
-    StrategicIconName = 'icon_structure3_mass',
+    StrategicIconName = 'icon_structure1_mass',
     StrategicIconSortPriority = 245,
     Wreckage = {
         Blueprint = '/props/DefaultWreckage/DefaultWreckage_prop.bp',
