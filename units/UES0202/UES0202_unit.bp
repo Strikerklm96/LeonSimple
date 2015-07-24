@@ -283,7 +283,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 5,
-            ProjectileId = '/mods/LeonSimple/projectiles/LeonMissileLarge01/LeonMissileLarge01_proj.bp',
+            ProjectileId = '/mods/LeonSimple/projectiles/LeonMissileAA01/LeonMissileAA01_proj.bp',
             ProjectileLifetime = 10,
             RackBones = {
                 {

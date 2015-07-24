@@ -1,4 +1,4 @@
-##****************************************************************************
+#****************************************************************************
 #**  File     :  lua/modules/ui/help/unitdescriptions.lua
 #**  Author(s):  Ted Snook
 #**
@@ -17,6 +17,7 @@ Description = {
 	['uel0202'] = "Small tank. In numbers, it overwhelms larger targets.",##Small Tank
 	['uel0303'] = "Medium bot. Devastating against smaller units.",##Medium Bot
 	['xel0305'] = "Large bot. Designed to engage base defences and medium bots.",##Mobile Rail Gun
+	['xel0306'] = "Mobile missile launcher. Long reload time. Good for taking out special targets from afar.",##Mobile Missile Launcher
 	##Air
 	['uea0303'] = "Anti-Aircraft fighter jet.",##Fighter
 	['uea0304'] = "Strategic bomber that drops large ordinance. Has difficulty hitting moving targets.",##Bomber
@@ -87,7 +88,7 @@ Description = {
    ['uel0307'] = "<LOC Unit_Description_0034>Mobile shield generator.",
    ['uel0304'] = "<LOC Unit_Description_0036>Slow-moving heavy artillery. Must be stationary to fire.",
    ['uel0401'] = "<LOC Unit_Description_0037>Experimental, amphibious mobile factory. Equipped with battleship-level weapons and armor. Its shield consumes Energy.",
-   ['xel0306'] = "<LOC Unit_Description_0308> Mobile missile launcher. Long reload time. Designed to overwhelm enemy shields and tactical missile defenses with large salvos.",
+
    
    ##AIR
    ['uea0101'] = "<LOC Unit_Description_0038>Standard air scout.",

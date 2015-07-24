@@ -158,7 +158,7 @@ UnitBlueprint {
         UnitWeight = 1,
     },
     Intel = {
-        VisionRadius = 35,
+        VisionRadius = 40,
     },
     Interface = {
         HelpText = '[Help Text]',

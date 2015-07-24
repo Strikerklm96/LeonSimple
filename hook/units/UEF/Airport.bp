@@ -185,7 +185,7 @@ UnitBlueprint {
         UpgradesTo = 'ueb0202',
     },
     Intel = {
-        VisionRadius = 35,
+        VisionRadius = 40,
     },
     Interface = {
         HelpText = '[Help Text]',
