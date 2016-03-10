@@ -224,7 +224,7 @@ UnitBlueprint {
             BallisticArc = 'RULEUBA_None',
             CollideFriendly = false,
             CountedProjectile = false,
-            Damage = 300,
+            Damage = 1000,
             DamageFriendly = false,
             DamageRadius = 2,
             DamageType = 'AntiPlated',
@@ -238,7 +238,7 @@ UnitBlueprint {
             MaxRadius = 90,
             MinRadius = 15,
             MuzzleChargeDelay = 0,	--leave as 0
-            MuzzleSalvoDelay = 16,	--t in between muzzles firing
+            MuzzleSalvoDelay = 20,	--t in between muzzles firing
             MuzzleSalvoSize = 1,	--n of times the muzzle will fire during a rack firing
             MuzzleVelocity = 5,
             ProjectileId = '/mods/LeonSimple/projectiles/LeonMissileCruise01/LeonMissileCruise01_proj.bp',

@@ -207,7 +207,7 @@ UnitBlueprint {
             RackSalvoReloadTime = 0,
             RackSalvoSize = 1,
             RangeCategory = 'UWRC_Countermeasure',
-            RateOfFire = 5,
+            RateOfFire = 7,
             TargetCheckInterval = 0.5,
             TargetRestrictDisallow = 'UNTARGETABLE,STRATEGIC',
             TargetRestrictOnlyAllow = 'MISSILE',

@@ -115,7 +115,7 @@ UnitBlueprint {
         BuildCostEnergy = 200,
         BuildCostMass = 200,
         BuildTime = 20,
-        MaintenanceConsumptionPerSecondEnergy = 10,
+        MaintenanceConsumptionPerSecondEnergy = 0,
         RebuildBonusIds = {
             'ueb3104',
         },
@@ -156,7 +156,7 @@ UnitBlueprint {
     Intel = {
 		FreeIntel = true,
         OmniRadius = 0,
-        RadarRadius = 100,
+        RadarRadius = 150,
         ReactivateTime = 10,
         ShowIntelOnSelect = true,
         VisionRadius = 100,

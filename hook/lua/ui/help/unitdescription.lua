@@ -12,7 +12,7 @@ Description = {
 
 	##SIMPLE MOD START=========
 	
-	##UEF++++++++++++++++++
+	##UEF++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	##Land
 	['uel0202'] = "Small tank. In numbers, it overwhelms larger targets.",##Small Tank
 	['uel0303'] = "Medium bot. Devastating against smaller units.",##Medium Bot
@@ -26,20 +26,21 @@ Description = {
 	['ues0103'] = "Small intelligence ship equipped with medium range gauss cannon.",##Frigate
 	['ues0202'] = "Long range anti-aircraft missile warship.",##Cruiser
 	['ues0302'] = "Huge warship capable of bombarding from afar.",##Battleship
-	#Defense
+	##Defense
 	['ueb3104'] = "Provides vision in a large area.",##Vision Tower
 	['ueb2303'] = "Long range defense cannon.",##Artillery Installation
 	['ueb2301'] = "Good for defending against most land based threats.",##Point Defense
 	['ueb2304'] = "Decimates enemy aircraft.",##SAM
 	['ueb2305'] = "Takes ten minutes to build an ICBM that has unlimited range and cannot be shot down. Commander increases nuke build rate by 10%",##ICBM Silo
 	['ueb4201'] = "Anti Missile System. Shoots down enemy missiles in range.",##AMS Installation
-	#Economy
+	['ueb4301'] = "Repairs nearby units. Takes 30 seconds to reactivate once powered down.",##Regenerative Matrix
+	##Economy
 	['ueb1302'] = "Harvests Mass. Must be placed on a mass deposit.",##Mass Extractor
 	['ueb1201'] = "Generates Energy. Damages nearby units if destroyed.",##Power Plant
 	['ueb0101'] = "Builds mobile land combat assets.",##Factory
 	['ueb0102'] = "Constructs military grade aircraft.",##Starport
 	['ueb0103'] = "Builds large vessels for maritime combat.",##Shipyard
-	#UEF--------------
+	##UEF++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 	##SIMPLE MOD END=========
 	
