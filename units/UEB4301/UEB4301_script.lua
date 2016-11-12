@@ -11,10 +11,6 @@
 local TShieldStructureUnit = import('/lua/terranunits.lua').TShieldStructureUnit
 local AIUtils = import('/lua/ai/aiutilities.lua')
 
-local regenRate = 11#per second
-local regenTick = 0.2#how frequent are the heals
-local regenRadius = 15#how far away does it apply
-local working = true
 
 
 UEB4301 = Class(TShieldStructureUnit) {
@@ -26,21 +22,32 @@ UEB4301 = Class(TShieldStructureUnit) {
     },
 	
     RegenBuffThread = function(self)
+		print('this')
+		print(self.regenRate)
+		print(self.working)
+		print(self.regenTick)
+		print(self.regenRadius)
         while not self:IsDead() do
-            local units = AIUtils.GetOwnUnitsAroundPoint(self:GetAIBrain(), categories.ALLUNITS, self:GetPosition(), regenRadius)
-			if(self.Attribute1) then
+            local units = AIUtils.GetOwnUnitsAroundPoint(self:GetAIBrain(), categories.ALLUNITS, self:GetPosition(), self.regenRadius)
+			if(self.working) then
 				for _, unit in units do
-					unit:SetHealth(self, unit:GetHealth()+(regenRate*regenTick))
+					unit:SetHealth(self, unit:GetHealth()+(self.regenRate*self.regenTick))
 				end
 			end
-            WaitSeconds(regenTick)
+            WaitSeconds(self.regenTick)
         end
     end,
     
     OnStopBeingBuilt = function(self,builder,layer)
+		print('this 2')
+		self.working = true
+		self.regenRate = self:GetBlueprint().Defense.Repair.RegenRatePerSecond
+		self.regenTick = self:GetBlueprint().Defense.Repair.RegenTick
+		self.regenRadius = self:GetBlueprint().Defense.Shield.ShieldSize / 2
+        
 		self:ForkThread(self.RegenBuffThread)
-		self.Attribute1 = true
-        TShieldStructureUnit.OnStopBeingBuilt(self,builder,layer)
+		
+		TShieldStructureUnit.OnStopBeingBuilt(self,builder,layer)
         self.Rotator1 = CreateRotator(self, 'Spinner', 'y', nil, 10, 5, 10)
         self.Rotator2 = CreateRotator(self, 'B01', 'z', nil, -10, 5, -10)
         self.Trash:Add(self.Rotator1)
@@ -49,7 +56,7 @@ UEB4301 = Class(TShieldStructureUnit) {
     end,
 
     OnShieldEnabled = function(self)
-		self.Attribute1 = true
+		self.working = true
         TShieldStructureUnit.OnShieldEnabled(self)
         if self.Rotator1 then
             self.Rotator1:SetTargetSpeed(10)
@@ -70,7 +77,7 @@ UEB4301 = Class(TShieldStructureUnit) {
     end,
 
     OnShieldDisabled = function(self)
-		self.Attribute1 = false
+		self.working = false
         TShieldStructureUnit.OnShieldDisabled(self)
         self.Rotator1:SetTargetSpeed(0)
         self.Rotator2:SetTargetSpeed(0)
