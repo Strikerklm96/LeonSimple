@@ -54,6 +54,7 @@ UnitBlueprint {
         AirThreatLevel = 0,
         ArmorType = 'Ionized',
         EconomyThreatLevel = 0,
+		NormalArmor = 8,
         Health = 600,
         MaxHealth = 600,
         RegenRate = 0,

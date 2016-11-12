@@ -793,13 +793,7 @@ Unit = Class(moho.unit_methods) {
 	
 	# leon-health unit
     DoTakeDamage = function(self, instigator, amount, vector, damageType)
-		local armor = 0
-		if(self:GetBlueprint().Defense.NormalArmor) then
-			armor = self:GetBlueprint().Defense.NormalArmor
-		end
-			
-		amount = math.max(0,amount-armor)
-		print(amount)
+		amount = math.max(0,amount-self.NormalArmor)
 
         local preAdjHealth = self:GetHealth()
         self:AdjustHealth(instigator, -amount)
@@ -1556,6 +1550,13 @@ Unit = Class(moho.unit_methods) {
         if bp.Defense.LifeTime then
             self:ForkThread(self.LifeTimeThread)
         end
+		
+		#leon armor mod
+		if(self:GetBlueprint().Defense.NormalArmor) then
+			self.NormalArmor = self:GetBlueprint().Defense.NormalArmor
+		else
+			self.NormalArmor = 0
+		end
 
         self:PlayUnitSound('DoneBeingBuilt')
 
