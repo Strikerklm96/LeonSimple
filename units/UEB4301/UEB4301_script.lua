@@ -28,7 +28,7 @@ UEB4301 = Class(TShieldStructureUnit) {
     RegenBuffThread = function(self)
         while not self:IsDead() do
             local units = AIUtils.GetOwnUnitsAroundPoint(self:GetAIBrain(), categories.ALLUNITS, self:GetPosition(), regenRadius)
-			if(working) then
+			if(self.Attribute1) then
 				for _, unit in units do
 					unit:SetHealth(self, unit:GetHealth()+(regenRate*regenTick))
 				end
@@ -39,6 +39,7 @@ UEB4301 = Class(TShieldStructureUnit) {
     
     OnStopBeingBuilt = function(self,builder,layer)
 		self:ForkThread(self.RegenBuffThread)
+		self.Attribute1 = true
         TShieldStructureUnit.OnStopBeingBuilt(self,builder,layer)
         self.Rotator1 = CreateRotator(self, 'Spinner', 'y', nil, 10, 5, 10)
         self.Rotator2 = CreateRotator(self, 'B01', 'z', nil, -10, 5, -10)
@@ -48,6 +49,7 @@ UEB4301 = Class(TShieldStructureUnit) {
     end,
 
     OnShieldEnabled = function(self)
+		self.Attribute1 = true
         TShieldStructureUnit.OnShieldEnabled(self)
         if self.Rotator1 then
             self.Rotator1:SetTargetSpeed(10)
@@ -68,6 +70,7 @@ UEB4301 = Class(TShieldStructureUnit) {
     end,
 
     OnShieldDisabled = function(self)
+		self.Attribute1 = false
         TShieldStructureUnit.OnShieldDisabled(self)
         self.Rotator1:SetTargetSpeed(0)
         self.Rotator2:SetTargetSpeed(0)
