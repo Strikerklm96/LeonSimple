@@ -11,10 +11,11 @@
 local TShieldStructureUnit = import('/lua/terranunits.lua').TShieldStructureUnit
 local AIUtils = import('/lua/ai/aiutilities.lua')
 
-local regenRate = 11f#per second
-local regenTick = 0.2f#how frequent are the heals
-local regenRadius = 15f#how far away does it apply
+local regenRate = 11#per second
+local regenTick = 0.2#how frequent are the heals
+local regenRadius = 15#how far away does it apply
 local working = true
+
 
 UEB4301 = Class(TShieldStructureUnit) {
     
@@ -37,9 +38,7 @@ UEB4301 = Class(TShieldStructureUnit) {
     end,
     
     OnStopBeingBuilt = function(self,builder,layer)
-	
-		self.RegenThreadHandle = self:ForkThread(self.RegenBuffThread)
-		
+		self:ForkThread(self.RegenBuffThread)
         TShieldStructureUnit.OnStopBeingBuilt(self,builder,layer)
         self.Rotator1 = CreateRotator(self, 'Spinner', 'y', nil, 10, 5, 10)
         self.Rotator2 = CreateRotator(self, 'B01', 'z', nil, -10, 5, -10)
@@ -49,7 +48,6 @@ UEB4301 = Class(TShieldStructureUnit) {
     end,
 
     OnShieldEnabled = function(self)
-		working = true
         TShieldStructureUnit.OnShieldEnabled(self)
         if self.Rotator1 then
             self.Rotator1:SetTargetSpeed(10)
@@ -70,7 +68,6 @@ UEB4301 = Class(TShieldStructureUnit) {
     end,
 
     OnShieldDisabled = function(self)
-		working = false
         TShieldStructureUnit.OnShieldDisabled(self)
         self.Rotator1:SetTargetSpeed(0)
         self.Rotator2:SetTargetSpeed(0)
