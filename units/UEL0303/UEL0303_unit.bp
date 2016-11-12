@@ -39,7 +39,7 @@ UnitBlueprint {
     Categories = {
         'PRODUCTSC1',
         'SELECTABLE',
-        'BUILTBYTIER1FACTORY',
+        'BYT1FACTORY',
         'UEF',
         'MOBILE',
         'LAND',
@@ -60,7 +60,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 2,
     },
-    Description = 'Medium Bot',
+    Description = 'Mech',
     Display = {
         Abilities = {
             'Ionized',
@@ -151,7 +151,7 @@ UnitBlueprint {
         FactionName = 'UEF',
         Icon = 'land',
         TechLevel = 'RULEUTL_Secret',
-        UnitName = 'Tank Killer',
+        UnitName = 'Puma',
         UnitWeight = 1,
     },
     Intel = {

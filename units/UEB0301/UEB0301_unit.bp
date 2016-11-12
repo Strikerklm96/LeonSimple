@@ -1,24 +1,21 @@
 UnitBlueprint {
-    Merge = true,        -- Merge = true  leaves the original file intact and only modifies what you change
-    BlueprintId="ueb0101",
     AI = {
         TargetBones = {
-            'UEB0101',
-            'Extruder_Right',
-            'Extruder_Left',
-            'Foot_Right',
-            'Foot_Left',
+            'Target01',
+            'Target02',
+            'Target03',
+            'UEB0301',
         },
     },
     Audio = {
         Construct = Sound {
             Bank = 'UEB',
-            Cue = 'UEB0101_Construct_Start',
+            Cue = 'UEB0301_Construct_Start',
             LodCutoff = 'UnitMove_LodCutoff',
         },
         ConstructLoop = Sound {
             Bank = 'UEB',
-            Cue = 'UEB0101_Construct_Loop',
+            Cue = 'UEB0301_Construct_Loop',
             LodCutoff = 'UnitMove_LodCutoff',
         },
         DeathExplosion = Sound {
@@ -33,7 +30,7 @@ UnitBlueprint {
         },
         DoneBeingBuilt = Sound {
             Bank = 'UEB',
-            Cue = 'UEB0101_Activate',
+            Cue = 'UEB0301_Activate',
             LodCutoff = 'UnitMove_LodCutoff',
         },
         UISelection = Sound {
@@ -42,19 +39,20 @@ UnitBlueprint {
             LodCutoff = 'UnitMove_LodCutoff',
         },
     },
-    BuildIconSortPriority = 10,
+    BuildIconSortPriority = 70,
     Categories = {
         'PRODUCTSC1',
         'SELECTABLE',
-        'BUILTBYCOMMANDER',
+        'BYT2FACTORY',
         'UEF',
         'STRUCTURE',
         'LAND',
-        'TECH1',
+        'TECH3',
         'CONSTRUCTION',
         'FACTORY',
         'RALLYPOINT',
         'DRAGBUILD',
+        'CONSTRUCTIONSORTDOWN',
         'SIZE16',
         'VISIBLETORECON',
         'RECLAIMABLE',
@@ -63,8 +61,8 @@ UnitBlueprint {
     },
     Defense = {
         AirThreatLevel = 0,
-        ArmorType = 'Plated',
-        EconomyThreatLevel = 1,
+        ArmorType = 'Structure',
+        EconomyThreatLevel = 49,
         Health = 3200,
         MaxHealth = 3200,
         RegenRate = 0,
@@ -73,11 +71,21 @@ UnitBlueprint {
     },
     Description = 'Factory',
     Display = {
-        Abilities = {
-            'Hardened',
-        },
-        AnimationUpgrade = '/units/ueb0101/ueb0101_aupgrade.sca',
         BlinkingLights = {
+            {
+                BLBone = 'Foot_Right',
+                BLOffsetX = -0.4,
+                BLOffsetY = 0.8,
+                BLOffsetZ = -0.35,
+                BLScale = 1.5,
+            },
+            {
+                BLBone = 'Foot_Left',
+                BLOffsetX = 0.4,
+                BLOffsetY = 0.8,
+                BLOffsetZ = -0.35,
+                BLScale = 1.5,
+            },
             {
                 BLBone = 'Control_Tower',
                 BLOffsetX = 0,
@@ -100,14 +108,14 @@ UnitBlueprint {
                     ShaderName = 'Unit',
                 },
                 {
-                    AlbedoName = 'ueb0101_lod1_albedo.dds',
+                    AlbedoName = 'ueb0301_lod1_albedo.dds',
                     LODCutoff = 500,
                     ShaderName = 'Unit',
-                    SpecularName = 'ueb0101_lod1_specteam.dds',
+                    SpecularName = 'ueb0301_lod1_specteam.dds',
                 },
             },
         },
-        PlaceholderMeshName = 'UEB0101',
+        PlaceholderMeshName = 'UXB0007',
         SpawnRandomRotation = false,
         Tarmacs = {
             {
@@ -118,9 +126,6 @@ UnitBlueprint {
                 Normal = 'Tarmacs/Tar12x_01_normals',
                 Orientations = {
                     0,
-                    90,
-                    180,
-                    270,
                 },
                 RemoveWhenDead = false,
                 Width = 12.8,
@@ -134,17 +139,9 @@ UnitBlueprint {
         BuildRate = 1,
         BuildTime = 10,
         BuildableCategory = {
-            'BUILTBYTIER1FACTORY UEF MOBILE CONSTRUCTION',
-            'BUILTBYTIER1FACTORY UEF STRUCTURE LAND',
-            'BUILTBYTIER1FACTORY UEF MOBILE LAND',
+            'BYT3FACTORY UEF',
         },
-        RebuildBonusIds = {
-            'ueb0101',
-            'ueb0201',
-            'ueb0301',
-        },
-        StorageEnergy = 0,
-        StorageMass = 0,
+        StorageEnergy = 0,        StorageMass = 0,
     },
     Footprint = {
         SizeX = 5,
@@ -154,6 +151,8 @@ UnitBlueprint {
         BuildBones = {
             BuildEffectBones = {
                 'Muzzle01',
+                'Muzzle02',
+                'Muzzle03',
             },
         },
         Category = 'Factory',
@@ -177,19 +176,19 @@ UnitBlueprint {
         FactionName = 'UEF',
         Icon = 'land',
         SelectionPriority = 5,
-        TechLevel = 'RULEUTL_Basic',
+        TechLevel = 'RULEUTL_Secret',
         UnitWeight = 1,
-        UpgradesTo = 'ueb0201',
+        UpgradesFrom = 'ueb0201',
     },
     Intel = {
-        VisionRadius = 40,
+        VisionRadius = 20,
     },
     Interface = {
-        HelpText = '[Help Text]',
+        HelpText = '<LOC ueb0301_help>Land Factory',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 2.5,
-    LifeBarSize = 4.5,
+    LifeBarSize = 4.75,
     Physics = {
         BankingSlope = 0,
         BuildOnLayerCaps = {
@@ -203,9 +202,6 @@ UnitBlueprint {
         DragCoefficient = 0.2,
         FlattenSkirt = true,
         MaxSteerForce = 0,
-        MeshExtentsX = 5,
-        MeshExtentsY = 4.5,
-        MeshExtentsZ = 5.45,
         MinSpeedPercent = 0,
         MotionType = 'RULEUMT_None',
         RaisedPlatforms = {
@@ -253,13 +249,13 @@ UnitBlueprint {
             # height
             # Platform 2
             # TopLeft Offset From Center
-            -2,
+            -1.7,
 
             # x
             -1.6,
 
             # z
-            0,
+            0.45,
 
             # height
             # TopRight Offset From Center
@@ -269,17 +265,17 @@ UnitBlueprint {
             -1.6,
 
             # z
-            0.5,
+            0.45,
 
             # height
             # BottomLeft Offset From Center
-            -2,
+            -1.7,
 
             # x
             1.9,
 
             # z
-            0,
+            0.45,
 
             # height
             # BottomRight Offset From Center
@@ -289,7 +285,7 @@ UnitBlueprint {
             1.9,
 
             # z
-            0.5,
+            0.45,
 
             # height
             # Platform 3
@@ -300,17 +296,17 @@ UnitBlueprint {
             -1.6,
 
             # z
-            0.5,
+            0.45,
 
             # height
             # TopRight Offset From Center
-            2,
+            1.7,
 
             # x
             -1.6,
 
             # z
-            0,
+            0.45,
 
             # height
             # BottomLeft Offset From Center
@@ -320,11 +316,93 @@ UnitBlueprint {
             1.9,
 
             # z
-            0.5,
+            0.45,
 
             # height
             # BottomRight Offset From Center
-            2,
+            1.7,
+
+            # x
+            1.9,
+
+            # z
+            0.45,
+
+            # height
+            # Platform 4
+            # TopLeft Offset From Center
+            -2.5,
+
+            # x
+            -1.6,
+
+            # z
+            0,
+
+            # height
+            # TopRight Offset From Center
+            -1.7,
+
+            # x
+            -1.6,
+
+            # z
+            0.45,
+
+            # height
+            # BottomLeft Offset From Center
+            -2.5,
+
+            # x
+            1.9,
+
+            # z
+            0,
+
+            # height
+            # BottomRight Offset From Center
+            -1.7,
+
+            # x
+            1.9,
+
+            # z
+            0.45,
+
+            # height
+            # Platform 5
+            # TopLeft Offset From Center
+            1.7,
+
+            # x
+            -1.6,
+
+            # z
+            0.45,
+
+            # height
+            # TopRight Offset From Center
+            2.5,
+
+            # x
+            -1.6,
+
+            # z
+            0,
+
+            # height
+            # BottomLeft Offset From Center
+            1.7,
+
+            # x
+            1.9,
+
+            # z
+            0.45,
+
+            # height
+            # BottomRight Offset From Center
+            2.5,
 
             # x
             1.9,
@@ -359,11 +437,12 @@ UnitBlueprint {
     SelectionThickness = 0.3,
 
     # height
-    SizeX = 4.2,
+    SizeX = 4.8,
     SizeY = 0.6,
-    SizeZ = 4.4,
-    StrategicIconName = 'icon_factory1_land',
-    StrategicIconSortPriority = 220,
+    SizeZ = 4.8,
+    StrategicIconName = 'icon_factory3_land',
+    StrategicIconSortPriority = 210,
+    UpgradeDesc = '<LOC ueb0301_upgradedesc>Upgrading to Tech 3 Land Factory',
     Wreckage = {
         Blueprint = '/props/DefaultWreckage/DefaultWreckage_prop.bp',
         EnergyMult = 0,

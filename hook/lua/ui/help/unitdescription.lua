@@ -32,7 +32,7 @@ Description = {
 	['ueb2301'] = "Good for defending against most land based threats.",##Point Defense
 	['ueb2304'] = "Decimates enemy aircraft.",##SAM
 	['ueb2305'] = "Takes ten minutes to build an ICBM that has unlimited range and cannot be shot down. Commander increases nuke build rate by 10%",##ICBM Silo
-	['ueb4201'] = "Anti Missile System. Shoots down enemy missiles in range.",##AMS Installation
+	['ueb4201'] = "Anti Missile System. Shoots down enemy cruise missiles in range.",##AMS Installation
 	['ueb4301'] = "Repairs nearby units. Takes 30 seconds to reactivate once powered down.",##Regenerative Matrix
 	##Economy
 	['ueb1302'] = "Harvests Mass. Must be placed on a mass deposit.",##Mass Extractor

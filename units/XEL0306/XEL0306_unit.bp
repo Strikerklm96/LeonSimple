@@ -52,11 +52,11 @@ UnitBlueprint {
     Categories = {
         'PRODUCTFA',
         'SELECTABLE',
-        'BUILTBYTIER1FACTORY',
+        'BYT3FACTORY',
         'UEF',
         'MOBILE',
         'LAND',
-        'TECH1',
+        'TECH3',
         'INDIRECTFIRE',
         'SILO',
         'VISIBLETORECON',
@@ -73,7 +73,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 2,
     },
-    Description = 'Mobile Missile Platform',
+    Description = 'Missile Platform',
     Display = {
         Abilities = {
 			'Light',
@@ -151,7 +151,7 @@ UnitBlueprint {
         FactionName = 'UEF',
         Icon = 'land',
         TechLevel = 'RULEUTL_Advanced',
-        UnitName = '<LOC xel0306_name>Spearhead',
+        UnitName = 'Javelin',
         UnitWeight = 1,
     },
     Intel = {

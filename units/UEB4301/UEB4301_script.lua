@@ -11,9 +11,9 @@
 local TShieldStructureUnit = import('/lua/terranunits.lua').TShieldStructureUnit
 local AIUtils = import('/lua/ai/aiutilities.lua')
 
-local regenRate = 10#per second
-local regenTick = 0.2#how frequent are the heals
-local regenRadius = 15#how far away does it apply
+local regenRate = 11f#per second
+local regenTick = 0.2f#how frequent are the heals
+local regenRadius = 15f#how far away does it apply
 local working = true
 
 UEB4301 = Class(TShieldStructureUnit) {

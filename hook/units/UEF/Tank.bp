@@ -41,7 +41,7 @@ UnitBlueprint {
     Categories = {
         'PRODUCTSC1',
         'SELECTABLE',
-        'BUILTBYTIER1FACTORY',
+        'BYT1FACTORY',
         'UEF',
         'MOBILE',
         'LAND',
@@ -55,6 +55,7 @@ UnitBlueprint {
     Defense = {
         AirThreatLevel = 0,
         ArmorType = 'Light',
+		NormalArmor = 93,
         EconomyThreatLevel = 0,
         Health = 125,
         MaxHealth = 125,
@@ -62,7 +63,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 1,
     },
-    Description = 'Light Tank',
+    Description = 'Tank',
     Display = {
         Abilities = {
             'Light',
@@ -148,7 +149,7 @@ UnitBlueprint {
         FactionName = 'UEF',
         Icon = 'land',
         TechLevel = 'RULEUTL_Advanced',
-        UnitName = 'Stryker',
+        UnitName = 'Ant',
         UnitWeight = 1,
     },
     Intel = {

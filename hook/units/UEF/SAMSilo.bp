@@ -55,7 +55,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = 'AA Missile Platform',
+    Description = 'SAM',
     Display = {
         Abilities = {
             'Hardened',

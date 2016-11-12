@@ -1,9 +1,7 @@
 UnitBlueprint {
-    Merge = true,        -- Merge = true  leaves the original file intact and only modifies what you change
-    BlueprintId="ueb0201",
     AI = {
         TargetBones = {
-            'UEB0201',
+            'UEB0101',
             'Extruder_Right',
             'Extruder_Left',
             'Foot_Right',
@@ -13,12 +11,12 @@ UnitBlueprint {
     Audio = {
         Construct = Sound {
             Bank = 'UEB',
-            Cue = 'UEB0201_Construct_Start',
+            Cue = 'UEB0101_Construct_Start',
             LodCutoff = 'UnitMove_LodCutoff',
         },
         ConstructLoop = Sound {
             Bank = 'UEB',
-            Cue = 'UEB0201_Construct_Loop',
+            Cue = 'UEB0101_Construct_Loop',
             LodCutoff = 'UnitMove_LodCutoff',
         },
         DeathExplosion = Sound {
@@ -33,7 +31,7 @@ UnitBlueprint {
         },
         DoneBeingBuilt = Sound {
             Bank = 'UEB',
-            Cue = 'UEB0201_Activate',
+            Cue = 'UEB0101_Activate',
             LodCutoff = 'UnitMove_LodCutoff',
         },
         UISelection = Sound {
@@ -42,19 +40,19 @@ UnitBlueprint {
             LodCutoff = 'UnitMove_LodCutoff',
         },
     },
-    BuildIconSortPriority = 70,
+    BuildIconSortPriority = 10,
     Categories = {
         'PRODUCTSC1',
         'SELECTABLE',
+        'BUILTBYCOMMANDER',
         'UEF',
         'STRUCTURE',
         'LAND',
-        'TECH2',
+        'TECH1',
         'CONSTRUCTION',
         'FACTORY',
         'RALLYPOINT',
         'DRAGBUILD',
-        'CONSTRUCTIONSORTDOWN',
         'SIZE16',
         'VISIBLETORECON',
         'RECLAIMABLE',
@@ -63,33 +61,27 @@ UnitBlueprint {
     },
     Defense = {
         AirThreatLevel = 0,
-        ArmorType = 'Structure',
-        EconomyThreatLevel = 11,
-        Health = 9000,
-        MaxHealth = 9000,
+        ArmorType = 'Plated',
+        EconomyThreatLevel = 1,
+        Health = 3200,
+        MaxHealth = 3200,
         RegenRate = 0,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC ueb0201_desc>Land Factory',
+    Description = 'Factory',
     Display = {
         Abilities = {
-            '<LOC ability_upgradable>Upgradeable',
+            'Hardened',
+			'<LOC ability_upgradable>Upgradeable',
         },
-        AnimationUpgrade = '/units/ueb0201/UEB0201_Aupgrade.sca',
+        AnimationUpgrade = '/units/ueb0101/ueb0101_aupgrade.sca',
         BlinkingLights = {
             {
-                BLBone = 0,
-                BLOffsetX = -1.28,
-                BLOffsetY = 0.9,
-                BLOffsetZ = 1.4,
-                BLScale = 1.5,
-            },
-            {
-                BLBone = 0,
-                BLOffsetX = 1.28,
-                BLOffsetY = 0.9,
-                BLOffsetZ = 1.4,
+                BLBone = 'Control_Tower',
+                BLOffsetX = 0,
+                BLOffsetY = 0,
+                BLOffsetZ = 0.5,
                 BLScale = 1.5,
             },
         },
@@ -107,14 +99,14 @@ UnitBlueprint {
                     ShaderName = 'Unit',
                 },
                 {
-                    AlbedoName = 'ueb0201_lod1_albedo.dds',
+                    AlbedoName = 'ueb0101_lod1_albedo.dds',
                     LODCutoff = 500,
                     ShaderName = 'Unit',
-                    SpecularName = 'ueb0201_lod1_specteam.dds',
+                    SpecularName = 'ueb0101_lod1_specteam.dds',
                 },
             },
         },
-        PlaceholderMeshName = 'UXB0006',
+        PlaceholderMeshName = 'UEB0101',
         SpawnRandomRotation = false,
         Tarmacs = {
             {
@@ -136,18 +128,20 @@ UnitBlueprint {
         UniformScale = 0.1,
     },
     Economy = {
-        BuildCostEnergy = 7200,
-        BuildCostMass = 800,
-        BuildRate = 40,
-        BuildTime = 1600,
+        BuildCostEnergy = 100,
+        BuildCostMass = 100,
+        BuildRate = 1,
+        BuildTime = 10,
         BuildableCategory = {
-            'BUILTBYTIER2FACTORY UEF MOBILE CONSTRUCTION',
-            'BUILTBYTIER2FACTORY UEF STRUCTURE LAND',
-            'BUILTBYTIER2FACTORY UEF MOBILE LAND',
-            'BUILTBYLANDTIER2FACTORY UEF MOBILE CONSTRUCTION',
+            'BYT1FACTORY UEF',
         },
-        StorageEnergy = 800,
-        StorageMass = 160,
+        RebuildBonusIds = {
+            'ueb0101',
+            'ueb0201',
+            'ueb0301',
+        },
+        StorageEnergy = 0,
+        StorageMass = 0,
     },
     Footprint = {
         SizeX = 5,
@@ -157,7 +151,6 @@ UnitBlueprint {
         BuildBones = {
             BuildEffectBones = {
                 'Muzzle01',
-                'Muzzle03',
             },
         },
         Category = 'Factory',
@@ -181,16 +174,15 @@ UnitBlueprint {
         FactionName = 'UEF',
         Icon = 'land',
         SelectionPriority = 5,
-        TechLevel = 'RULEUTL_Advanced',
+        TechLevel = 'RULEUTL_Basic',
         UnitWeight = 1,
-        UpgradesFrom = 'ueb0101',
-        UpgradesTo = 'ueb0301',
+        UpgradesTo = 'ueb0201',
     },
     Intel = {
-        VisionRadius = 20,
+        VisionRadius = 40,
     },
     Interface = {
-        HelpText = '<LOC ueb0201_help>Land Factory',
+        HelpText = '[Help Text]',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 2.5,
@@ -208,6 +200,9 @@ UnitBlueprint {
         DragCoefficient = 0.2,
         FlattenSkirt = true,
         MaxSteerForce = 0,
+        MeshExtentsX = 5,
+        MeshExtentsY = 4.5,
+        MeshExtentsZ = 5.45,
         MinSpeedPercent = 0,
         MotionType = 'RULEUMT_None',
         RaisedPlatforms = {
@@ -364,9 +359,8 @@ UnitBlueprint {
     SizeX = 4.2,
     SizeY = 0.6,
     SizeZ = 4.4,
-    StrategicIconName = 'icon_factory2_land',
-    StrategicIconSortPriority = 215,
-    UpgradeDesc = '<LOC ueb0201_upgradedesc>Upgrading to Tech 2 Land Factory',
+    StrategicIconName = 'icon_factory1_land',
+    StrategicIconSortPriority = 220,
     Wreckage = {
         Blueprint = '/props/DefaultWreckage/DefaultWreckage_prop.bp',
         EnergyMult = 0,

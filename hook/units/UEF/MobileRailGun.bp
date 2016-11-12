@@ -1,5 +1,5 @@
 UnitBlueprint {
-    Merge = true,        -- Merge = true  leaves the original file intact and only modifies what you change
+    Merge = true, -- Merge = true  leaves the original file intact and only modifies what you change
     BlueprintId="xel0305",
     AI = {
         TargetBones = {
@@ -57,16 +57,18 @@ UnitBlueprint {
     Categories = {
         'PRODUCTFA',
         'SELECTABLE',
-        'BUILTBYTIER1FACTORY',
+        'BYT2FACTORY',
         'UEF',
         'MOBILE',
         'LAND',
-        'TECH1',
+        'TECH2',
         'DIRECTFIRE',
         'VISIBLETORECON',
         'RECLAIMABLE',
         'BOT',
         'OVERLAYDIRECTFIRE',
+		'AT1',
+		'AT2',
     },
     Defense = {
         AirThreatLevel = 0,
@@ -78,7 +80,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 3,
     },
-    Description = 'Mobile Rail Gun',
+    Description = 'Mech',
     Display = {
         Abilities = {
 			'Hardened',
