@@ -33,20 +33,20 @@ armordefinition = {
         # Armor Definition
         'ExperimentalFootfall 0.0',        
     },
-
-
-    {
-        'AntiLight',
-		'Normal 1.0',
-	},
-	{
-        'AntiPlated',
-		'Normal 1.0',
-	},
-    {
-        'AntiIonized',
-		'Normal 1.0',
-	},
+	
+	
+  #  {
+ #       'AntiLight',
+#		'Normal 1.0',
+#	},
+#	{
+ #       'AntiPlated',
+#		'Normal 1.0',
+#	},
+ #   {
+  #      'AntiIonized',
+#		'Normal 1.0',
+#	},
 
 	
 	
